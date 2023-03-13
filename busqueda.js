@@ -3,7 +3,7 @@ crear una función que acepte como parámetro un id numérico y devuelva el prod
 
 const data = require("./dataBase")
 
-const itemID = (id) => data.find(item => item.id === id)
+const itemID = (id) => data.find(item => item.id == id)
 const itemValue = (value) => data.filter(item => item.precio < value)
 
 
